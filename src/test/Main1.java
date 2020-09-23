@@ -30,7 +30,7 @@ public class Main1 {
 			//Array for classes
 			String[] classes = new String[numClasses];
 		
-			
+			int[] grades = new int[numClasses];
 			//ask for each class as depending on the amount stored in numClasses
 			for (int i = 0; i != (numClasses); i++) {
 				
@@ -49,12 +49,21 @@ public class Main1 {
 				}
 			
 			// here is where you would add new code
-			/*
-			 * this for loop is not needed, just used for testing
+			
 			for (int j = 0; j != (numClasses); j++) {
-			System.out.println("Classes list: " + classes[j] );
+			//System.out.println("Classes list: " + classes[j] );
+			
+			System.out.println("What is your grade for this class? " + classes[j]);
+			grades[j] = in.nextInt();
 			}
-			*/
+			//print list of classes with the grade
+			for (int k = 0; k != (numClasses); k++) {
+				//System.out.println("Classes list: " + classes[j] );
+				
+				System.out.println("your grade for " + classes[k] + " is: " + grades[k]);
+			
+				}
+			
 
 		
 		}
