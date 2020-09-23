@@ -33,17 +33,26 @@ public class Main1 {
 			
 			//ask for each class as depending on the amount stored in numClasses
 			for (int i = 0; i != (numClasses); i++) {
+				
+				  /*
+				   * these 2 lines are just for testing, not needed
 				  System.out.println("value of I: " + i);
-				  System.out.println("value of numclasses: " + numClasses);
+				  System.out.println("value of numclasses: " + numClasses);*/
+				  
+				  //you don't need to put i in the middle of this, word it however you want
 				  System.out.println("What is the " + i + " class you are in?");
-				  classes[i] = in.next();
-				  //in.nextLine(); //using this instead of in.next(); causes the runs twice problem
+				  //make sure the i is in the brackets next to classes, otherwise it wont work or it will over write the same position in the array
+				  
+				  classes[i] = in.next(); //using this instead of in.nextLine(); causes the runs twice problem
 				  
 				  
 				}
+			/*
+			 * this for loop is not needed, just used for testing
 			for (int j = 0; j != (numClasses); j++) {
 			System.out.println("Classes list: " + classes[j] );
 			}
+			*/
 
 		
 		}
